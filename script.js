@@ -33,18 +33,16 @@ function preload() {
 }
 
 function setup() {
+    setAttributes('antialias', true);
     // create a WEBGL canvas
     createCanvas(canvas.w, canvas.h, WEBGL);
-
-    // pass the shader the canvas resolution (if needed)
-    s.setUniform("u_resolution", [canvas.w, canvas.h]);
-
     // if we are on a mobile device, limit pixel ratio to 1
     // otherwise set the pixel ratio to either 2 or the native pixel ratio, whichever is lowest
     (isMob) ? pixelDensity(1): pixelDensity(min(window.devicePixelRatio), 2);
-
     // if the algorithm is animated, set the frame-rate 
     frameRate(30);
+    // pass the shader the canvas resolution (if needed)
+    s.setUniform("u_resolution", [canvas.w, canvas.h]);
 
     window.$fxhashFeatures = {
       // fx(hash) features for your tokens go here. If it important to set these before you draw a single pixel on the screen!
@@ -60,7 +58,6 @@ function setup() {
 }
 
 function draw() {
-  
     // draw code goes here
     noStroke();
     fill('orange');
