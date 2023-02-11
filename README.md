@@ -10,4 +10,7 @@ Based on [Fxhash p5js Template](https://github.com/tallzy/fxhash-p5-template).
 - a collection of [heavily commented 2d shaders](https://github.com/aferriss/p5jsShaderExamples)
 
 ### Notes
-- The minified p5.js library (v1.5.0, released on October 18, 2022) is included in the `./libraries` folder. The latest version of p5.js [can be found here](https://p5js.org/download/).
+- put any additional shader files into the `./shaders` folder and load them in your `preload()` function
+- uniforms for time and resolution are passed to the shader
+- the vertex shader will apply the shader code to the vertices of a particular geometry (i.e. taking into account `uProjectionMatrix` and `uModelViewMatrix`). If you want the shader to project to the whole screen instead see the vertex shader comments
+- the minified p5.js library (v1.5.0, released on October 18, 2022) is included in the `./libraries` folder. The latest version of p5.js [can be found here](https://p5js.org/download/).
