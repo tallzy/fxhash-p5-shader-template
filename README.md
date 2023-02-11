@@ -1,4 +1,4 @@
-# Fxhash p5js Template
+# Fxhash p5js Shader Template
 ## Overview
 Everything you need to start a new p5.js generative art project for release on fx(hash).
 
