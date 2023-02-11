@@ -1,12 +1,12 @@
 # Fxhash p5js Shader Template
 ## Overview
-Everything you need to start a new p5.js generative art project which includes shaders for release on fx(hash).
+Everything you need to start a new p5.js generative art project that uses shaders for release on fx(hash).
 
 Based on [Fxhash p5js Template](https://github.com/tallzy/fxhash-p5-template).
 
 ## Shader resources
 
-- resource on [using shaders with p5.js](https://github.com/ITP-xStory/p5js-shaders)
+- excellent resource on [using shaders with p5.js](https://github.com/ITP-xStory/p5js-shaders)
 - a collection of [heavily commented 2d shaders](https://github.com/aferriss/p5jsShaderExamples)
 
 ### Notes
